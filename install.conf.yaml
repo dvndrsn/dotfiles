@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.bash:
+    ~/.bash_profile:
+    ~/.bashrc:
+    ~/.emacs.d:
+    ~/.spacemacs:
+    ~/.gitconfig:
+    ~/.gitignore_global:
+    #~.pythonrc:
+    ~/.vim:
+    
+# - shell:
+#    - mac_setup.sh 

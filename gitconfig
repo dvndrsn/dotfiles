@@ -1,0 +1,5 @@
+[credential]
+	helper = osxkeychain
+[user]
+	name = Dave A.
+	email = dave@dvndrsn.com
