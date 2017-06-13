@@ -7,3 +7,6 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/pivotal/vim-config.git
+[submodule "setup/linux-emacs"]
+	path = setup/ubuntu/emacs
+	url = https://github.com/favadi/build-emacs
