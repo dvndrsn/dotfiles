@@ -26,7 +26,7 @@ install_spacemacs() {
 
 install_sublime() {
     if [ "$(uname)" == "Darwin" ]; then
-        brew install sublime-text
+        brew cask install sublime-text
     elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
         sudo add-apt-repository ppa:webupd8team/sublime-text-3
         sudo apt-get update

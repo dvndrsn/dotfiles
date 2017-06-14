@@ -12,7 +12,7 @@ cd "${BASEDIR}"
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 # Update emacs / vim configurations from remote repos
-git submodule update --init --recursive .emacs
-git submodule update --init --recursive .vim
+git submodule init
+git submodule update
 
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"

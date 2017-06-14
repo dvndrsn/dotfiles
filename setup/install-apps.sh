@@ -6,7 +6,7 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install slack
     brew cask install screenhero
     brew cask install dropbox
-    brew cask install keypassx
+    brew cask install keepassx
     brew cask install xld # audio transcoding
 
     brew cask install dash
