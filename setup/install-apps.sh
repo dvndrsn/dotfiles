@@ -24,6 +24,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     sh setup/ubuntu/spotify.sh
     # slack - https://slack.com/downloads/instructions/linux
     sh setup/ubuntu/dropbox.sh
+    sudo apt-get install keepassx
     sh setup/ubuntu/flux.sh
     # pomodoro - https://pomodoneapp.com/download-pomodone-app.html#linux
 fi
