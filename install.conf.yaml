@@ -10,6 +10,7 @@
     ~/.bash_profile:
     ~/.bashrc:
     ~/.emacs.d:
+    ~/.iterm:
     ~/.spacemacs:
     ~/.gitconfig:
     ~/.gitignore_global:
