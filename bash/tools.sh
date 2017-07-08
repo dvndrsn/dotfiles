@@ -1,3 +1,13 @@
+# brew
+if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+  export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+  export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+  export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+  export XDG_DATA_DIRS="/home/linuxbrew/.linuxbrew/share:$XDG_DATA_DIRS"
+
+fi
+
 # Bash
 ## bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -9,7 +19,7 @@ fi
 
 # Languages
 ## Ruby - rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
+export RBENV_ROOT="$HOME/.rbenv"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ## Python - pyenv
@@ -21,4 +31,4 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 
 ## Javascript - nvm
 export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+source $(brew --prefix)/opt/nvm/nvm.sh
