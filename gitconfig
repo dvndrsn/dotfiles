@@ -3,3 +3,5 @@
 [user]
 	name = Dave A.
 	email = dave@dvndrsn.com
+[core]
+	excludesfile = /home/onenote/.gitignore_global
