@@ -6,6 +6,7 @@
 - clean: ['~', '~/.config']
 
 - link:
+    ~/.atom:
     ~/.bash:
     ~/.bash_profile:
     ~/.bashrc:
