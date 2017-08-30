@@ -1,77 +1,77 @@
 # PS1
 ### Constants
 # Reset
-Color_Off="\[\033[0m\]"       # Text Reset
+Color_Off="\033[0m"       # Text Reset
 
 # Regular Colors
-Black="\[\033[0;30m\]"        # Black
-Red="\[\033[0;31m\]"          # Red
-Green="\[\033[0;32m\]"        # Green
-Yellow="\[\033[0;33m\]"       # Yellow
-Blue="\[\033[0;34m\]"         # Blue
-Purple="\[\033[0;35m\]"       # Purple
-Cyan="\[\033[0;36m\]"         # Cyan
-White="\[\033[0;37m\]"        # White
+Black="\033[0;30m"        # Black
+Red="\033[0;31m"          # Red
+Green="\033[0;32m"        # Green
+Yellow="\033[0;33m"       # Yellow
+Blue="\033[0;34m"         # Blue
+Purple="\033[0;35m"       # Purple
+Cyan="\033[0;36m"         # Cyan
+White="\033[0;37m"        # White
 
 # Bold
-BBlack="\[\033[1;30m\]"       # Black
-BRed="\[\033[1;31m\]"         # Red
-BGreen="\[\033[1;32m\]"       # Green
-BYellow="\[\033[1;33m\]"      # Yellow
-BBlue="\[\033[1;34m\]"        # Blue
-BPurple="\[\033[1;35m\]"      # Purple
-BCyan="\[\033[1;36m\]"        # Cyan
-BWhite="\[\033[1;37m\]"       # White
+BBlack="\033[1;30m"       # Black
+BRed="\033[1;31m"         # Red
+BGreen="\033[1;32m"       # Green
+BYellow="\033[1;33m"      # Yellow
+BBlue="\033[1;34m"        # Blue
+BPurple="\033[1;35m"      # Purple
+BCyan="\033[1;36m"        # Cyan
+BWhite="\033[1;37m"       # White
 
 # Underline
-UBlack="\[\033[4;30m\]"       # Black
-URed="\[\033[4;31m\]"         # Red
-UGreen="\[\033[4;32m\]"       # Green
-UYellow="\[\033[4;33m\]"      # Yellow
-UBlue="\[\033[4;34m\]"        # Blue
-UPurple="\[\033[4;35m\]"      # Purple
-UCyan="\[\033[4;36m\]"        # Cyan
-UWhite="\[\033[4;37m\]"       # White
+UBlack="\033[4;30m"       # Black
+URed="\033[4;31m"         # Red
+UGreen="\033[4;32m"       # Green
+UYellow="\033[4;33m"      # Yellow
+UBlue="\033[4;34m"        # Blue
+UPurple="\033[4;35m"      # Purple
+UCyan="\033[4;36m"        # Cyan
+UWhite="\033[4;37m"       # White
 
 # Background
-On_Black="\[\033[40m\]"       # Black
-On_Red="\[\033[41m\]"         # Red
-On_Green="\[\033[42m\]"       # Green
-On_Yellow="\[\033[43m\]"      # Yellow
-On_Blue="\[\033[44m\]"        # Blue
-On_Purple="\[\033[45m\]"      # Purple
-On_Cyan="\[\033[46m\]"        # Cyan
-On_White="\[\033[47m\]"       # White
+On_Black="\033[40m"       # Black
+On_Red="\033[41m"         # Red
+On_Green="\033[42m"       # Green
+On_Yellow="\033[43m"      # Yellow
+On_Blue="\033[44m"        # Blue
+On_Purple="\033[45m"      # Purple
+On_Cyan="\033[46m"        # Cyan
+On_White="\033[47m"       # White
 
 # High Intensty
-IBlack="\[\033[0;90m\]"       # Black
-IRed="\[\033[0;91m\]"         # Red
-IGreen="\[\033[0;92m\]"       # Green
-IYellow="\[\033[0;93m\]"      # Yellow
-IBlue="\[\033[0;94m\]"        # Blue
-IPurple="\[\033[0;95m\]"      # Purple
-ICyan="\[\033[0;96m\]"        # Cyan
-IWhite="\[\033[0;97m\]"       # White
+IBlack="\033[0;90m"       # Black
+IRed="\033[0;91m"         # Red
+IGreen="\033[0;92m"       # Green
+IYellow="\033[0;93m"      # Yellow
+IBlue="\033[0;94m"        # Blue
+IPurple="\033[0;95m"      # Purple
+ICyan="\033[0;96m"        # Cyan
+IWhite="\033[0;97m"       # White
 
 # Bold High Intensty
-BIBlack="\[\033[1;90m\]"      # Black
-BIRed="\[\033[1;91m\]"        # Red
-BIGreen="\[\033[1;92m\]"      # Green
-BIYellow="\[\033[1;93m\]"     # Yellow
-BIBlue="\[\033[1;94m\]"       # Blue
-BIPurple="\[\033[1;95m\]"     # Purple
-BICyan="\[\033[1;96m\]"       # Cyan
-BIWhite="\[\033[1;97m\]"      # White
+BIBlack="\033[1;90m"      # Black
+BIRed="\033[1;91m"        # Red
+BIGreen="\033[1;92m"      # Green
+BIYellow="\033[1;93m"     # Yellow
+BIBlue="\033[1;94m"       # Blue
+BIPurple="\033[1;95m"     # Purple
+BICyan="\033[1;96m"       # Cyan
+BIWhite="\033[1;97m"      # White
 
 # High Intensty backgrounds
-On_IBlack="\[\033[0;100m\]"   # Black
-On_IRed="\[\033[0;101m\]"     # Red
-On_IGreen="\[\033[0;102m\]"   # Green
-On_IYellow="\[\033[0;103m\]"  # Yellow
-On_IBlue="\[\033[0;104m\]"    # Blue
-On_IPurple="\[\033[10;95m\]"  # Purple
-On_ICyan="\[\033[0;106m\]"    # Cyan
-On_IWhite="\[\033[0;107m\]"   # White
+On_IBlack="\033[0;100m"   # Black
+On_IRed="\033[0;101m"     # Red
+On_IGreen="\033[0;102m"   # Green
+On_IYellow="\033[0;103m"  # Yellow
+On_IBlue="\033[0;104m"    # Blue
+On_IPurple="\033[10;95m"  # Purple
+On_ICyan="\033[0;106m"    # Cyan
+On_IWhite="\033[0;107m"   # White
 
 # Various variables you might want for your PS1 prompt instead
 Time12h="\T"
@@ -102,21 +102,29 @@ git_branch() {
 }
 
 git_status() {
-    # Outputs a series of indicators based on the status of the
-    # working directory:
-    # + changes are staged and ready to commit
-    # ! unstaged changes are present
-    # ? untracked files are present
-    # S changes have been stashed
-    # P local commits need to be pushed to the remote
+    # Returns a string with characters representing the state of the
+    # current git branch
+    local staged_changes="+"
+    local unstaged_changes="!"
+    local untracked_changes="?"
+    local stashed_changes="S"
+    local unpushed_changes="P"
+    local branch_separator="|"
+
     local status="$(git status --porcelain 2>/dev/null)"
     local output=''
-    [[ -n $(egrep '^[MADRC]' <<<"$status") ]] && output="$output+"
-    [[ -n $(egrep '^.[MD]' <<<"$status") ]] && output="$output!"
-    [[ -n $(egrep '^\?\?' <<<"$status") ]] && output="$output?"
-    [[ -n $(git stash list) ]] && output="${output}S"
-    [[ -n $(git log --branches --not --remotes) ]] && output="${output}P"
-    [[ -n $output ]] && output="|$output"  # separate from branch name
+    [[ -n $(egrep '^[MADRC]' <<<"$status") ]] && \
+      output="${output}${staged_changes}"
+    [[ -n $(egrep '^.[MD]' <<<"$status") ]] && \
+      output="${output}${unstaged_changes}"
+    [[ -n $(egrep '^\?\?' <<<"$status") ]] && \
+      output="${output}${untracked_changes}"
+    [[ -n $(git stash list) ]] && \
+      output="${output}${stashed_changes}"
+    [[ -n $(git log --branches --not --remotes) ]] && \
+      output="${output}${unpushed_changes}"
+    [[ -n $output ]] && \
+      output="${branch_separator}${output}"
     echo $output
 }
 
@@ -127,33 +135,36 @@ git_color() {
     # - Green if all changes are staged
     # - Red if there are uncommitted changes with nothing staged
     # - Yellow if there are both staged and unstaged changes
-    local staged=$([[ $1 =~ \+ ]] && echo yes)
-    local dirty=$([[ $1 =~ [!\?] ]] && echo yes)
-    if [[ -n $staged ]] && [[ -n $dirty ]]; then
-        echo -e '\033[1;33m'  # bold yellow
-    elif [[ -n $staged ]]; then
-        echo -e '\033[1;32m'  # bold green
-    elif [[ -n $dirty ]]; then
-        echo -e '\033[1;31m'  # bold red
+    local staged_changes=$([[ $1 =~ \+ ]] && echo yes)
+    local uncommitted_changes=$([[ $1 =~ [!\?] ]] && echo yes)
+    if [[ -n $staged_changes ]] && [[ -n $uncommitted_changes ]]; then
+        echo -e $IYellow
+    elif [[ -n $staged_changes ]]; then
+        echo -e $IGreen
+    elif [[ -n $uncommitted_changes ]]; then
+        echo -e $IRed
     else
-        echo -e '\033[1;37m'  # bold white
+        echo -e $Iwhite
     fi
+}
+
+COLOR_START="\x01"
+COLOR_END="\x02"
+
+display_color() {
+  echo -e "${COLOR_START}$1${COLOR_END}"
 }
 
 git_prompt() {
-    # First, get the branch name...
-    local branch=$(git_branch)
-    # Empty output? Then we're not in a Git repository, so bypass the rest
-    # of the function, producing no output
-    if [[ -n $branch ]]; then
-        local state=$(git_status)
-        local color=$(git_color $state)
-        # Now output the actual code to insert the branch and status
-        echo -e "\x01$color\x02[$branch]"
+    local current_branch=$(git_branch)
+    if [[ -n $current_branch ]]; then
+        local branch_state=$(git_status)
+        local color=$(display_color $(git_color $branch_state))
+        echo -e "$color[$current_branch]"
     fi
 }
 
-PS1="$User@$Host:$PathShort \$(git_prompt)$Color_Off\n"
+PS1="$User@$Host:$PathFull \$(git_prompt)$Color_Off\n"
 PS1+="  $End"
 
 export PS1
