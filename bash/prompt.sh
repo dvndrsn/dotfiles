@@ -82,7 +82,7 @@ NewLine="\n"
 Jobs="\j"
 User="\u"
 Host="\h"
-End="⚡︎ "
+End="$" # ⚡︎
 
 COLOR_RED="\033[0;31m"
 COLOR_YELLOW="\033[0;33m"
@@ -101,16 +101,15 @@ git_branch() {
     git branch --no-color 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 
+staged_changes="+"
+unstaged_changes="!"
+untracked_changes="?"
+stashed_changes="S"
+unpushed_changes="P"
+
 git_status() {
     # Returns a string with characters representing the state of the
     # current git branch
-    local staged_changes="+"
-    local unstaged_changes="!"
-    local untracked_changes="?"
-    local stashed_changes="S"
-    local unpushed_changes="P"
-    local branch_separator="|"
-
     local status="$(git status --porcelain 2>/dev/null)"
     local output=''
     [[ -n $(egrep '^[MADRC]' <<<"$status") ]] && \
@@ -123,18 +122,12 @@ git_status() {
       output="${output}${stashed_changes}"
     [[ -n $(git log --branches --not --remotes) ]] && \
       output="${output}${unpushed_changes}"
-    [[ -n $output ]] && \
-      output="${branch_separator}${output}"
     echo $output
 }
 
 git_color() {
     # Receives output of git_status as argument; produces appropriate color
-    # code based on status of working directory:
-    # - White if everything is clean
-    # - Green if all changes are staged
-    # - Red if there are uncommitted changes with nothing staged
-    # - Yellow if there are both staged and unstaged changes
+    # code based on status of working directory
     local staged_changes=$([[ $1 =~ \+ ]] && echo yes)
     local uncommitted_changes=$([[ $1 =~ [!\?] ]] && echo yes)
     if [[ -n $staged_changes ]] && [[ -n $uncommitted_changes ]]; then
@@ -144,27 +137,32 @@ git_color() {
     elif [[ -n $uncommitted_changes ]]; then
         echo -e $IRed
     else
-        echo -e $Iwhite
+        echo -e $IWhite
     fi
+}
+
+display_status() {
+    local branch_separator="|"
+    [[ -n $1 ]] && echo "${branch_separator}${1}"
 }
 
 COLOR_START="\x01"
 COLOR_END="\x02"
 
 display_color() {
-  echo -e "${COLOR_START}$1${COLOR_END}"
+    echo -e "${COLOR_START}$1${COLOR_END}"
 }
 
 git_prompt() {
     local current_branch=$(git_branch)
     if [[ -n $current_branch ]]; then
-        local branch_state=$(git_status)
+        local branch_state=$(display_status $(git_status))
         local color=$(display_color $(git_color $branch_state))
         echo -e "$color[$current_branch]"
     fi
 }
 
 PS1="$User@$Host:$PathFull \$(git_prompt)$Color_Off\n"
-PS1+="  $End"
+PS1+="  $End  "
 
 export PS1
