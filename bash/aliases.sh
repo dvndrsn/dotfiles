@@ -14,3 +14,7 @@ alias be='bundle exec'
 
 # Python
 alias pyvenv='pyenv virtualenvwrapper'
+
+# Utility
+alias halp='stty echo'
+
