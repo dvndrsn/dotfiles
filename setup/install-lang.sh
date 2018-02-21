@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 install_ruby() {
     brew install rbenv
     brew install ruby-build
@@ -7,12 +9,16 @@ install_ruby() {
     # use latest ruby
     rbenv global $(rbenv versions --bare | \
                         sed -n '/^[[:space:]]*[0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}[[:space:]]*$/ h;${g;p;}')
+    # package management
+    gem install bundler
 }
 
 install_python() {
-    if [ "$(uname)" == "Darwin" ]; then
+    if [ "$(uname)" == "Darwin" ]
+    then
         brew install readline xz
-    elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
+    then
         sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
             libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
             xz-utils tk-dev
@@ -27,14 +33,19 @@ install_python() {
     # use latest
     pyenv global $(pyenv versions --bare | \
                         sed -n '/^[[:space:]]*[0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}[[:space:]]*$/ h;${g;p;}')
+    # package management
+    pip install pipenv
 }
 
 install_node() {
     brew install nvm
 
-    # install and use most recent long term service node
-    nvm install --lts
-    nvm use --lts
+    # install and use latest node
+    nvm install node
+    nvm use node
+    # package management
+    npm install -g npm
+    npm install -g yarn
 }
 
 install_ruby

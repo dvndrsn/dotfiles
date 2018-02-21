@@ -1,8 +1,8 @@
 [credential]
   helper = osxkeychain
 [user]
-  name = Dave A.
-  email = dave@dvndrsn.com
+	name = Dave A.
+	email = dave@dvndrsn.com
 [core]
   excludesfile = /home/onenote/.gitignore_global
   editor = vim

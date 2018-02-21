@@ -1,8 +1,13 @@
+#!/usr/bin/env bash
+
 # essential
 brew install git
-# git config --global user.name "Dave A."
-# git config --global user.email "dave@dvndrsn.com"
-# git config --global credential.helper osxkeychain
+git config --global user.name "Dave A."
+git config --global user.email "dave@dvndrsn.com"
+if [ "$(uname)" == "Darwin" ]
+then
+    git config --global credential.helper osxkeychain
+fi
 
 brew install ag
 brew install autojump
