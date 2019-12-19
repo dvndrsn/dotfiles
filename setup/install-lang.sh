@@ -39,6 +39,8 @@ install_node() {
 
 install_go() {
   bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+  latest_gvm="$(gvm listall | grep -o 'go[0-9]\{1,\}\.[0-9]\{1,\}$' | sort --version-sort | tail -n1)"
+  gvm install "$latest_gvm" && gvm use "$latest_gvm"
 }
 
 install_ruby
