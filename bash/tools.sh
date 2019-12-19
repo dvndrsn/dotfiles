@@ -32,5 +32,5 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix)/opt/nvm/nvm.sh
 
-### Client-specific
-/usr/local/opt/imagemagick@6/bin:$PATH
+## Go
+[[ -s "/Users/danderson/.gvm/scripts/gvm" ]] && source "/Users/danderson/.gvm/scripts/gvm"

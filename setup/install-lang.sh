@@ -32,11 +32,16 @@ install_python() {
 install_node() {
     brew install nvm
 
-    # install and use most recent long term service node
-    nvm install --lts
-    nvm use --lts
+    # install and use most recent node version
+    nvm install node
+    nvm use node
+}
+
+install_go() {
+  bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
 }
 
 install_ruby
 install_python
 install_node
+install_go
