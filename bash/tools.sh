@@ -16,6 +16,9 @@ fi
 ## autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+# vscode `code` bash command on mac
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # Languages
 ## Ruby - rbenv
 export RBENV_ROOT="$HOME/.rbenv"
