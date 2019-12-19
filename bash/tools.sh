@@ -35,5 +35,5 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix)/opt/nvm/nvm.sh
 
-## Go
+## Go - gvm
 [[ -s "/Users/danderson/.gvm/scripts/gvm" ]] && source "/Users/danderson/.gvm/scripts/gvm"
