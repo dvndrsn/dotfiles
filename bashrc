@@ -6,3 +6,8 @@ source ~/.bash/aliases.sh
 
 # Custom prompt
 source ~/.bash/prompt.sh
+
+# local configuration
+if [ -f ~/.bashrc.local ]; then
+    source ~/.bashrc.local
+fi
