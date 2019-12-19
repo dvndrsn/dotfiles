@@ -34,6 +34,12 @@ install_sublime() {
     fi
 }
 
+install_vscode() {
+    if [ "$(uname)" == "Darwin" ]; then
+        brew cask install visual-studio-code
+    fi
+}
+
 install_vim
 install_spacemacs
 install_sublime
