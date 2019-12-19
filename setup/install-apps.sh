@@ -4,7 +4,6 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install firefox
     brew cask install spotify
     brew cask install slack
-    brew cask install screenhero
     brew cask install dropbox
     brew cask install keepassx
     brew cask install xld # audio transcoding
@@ -14,6 +13,8 @@ if [ "$(uname)" == "Darwin" ]; then
     brew cask install caffeine
     brew cask install spectacle
     brew cask install flux
+
+    brew cask install tuple
 
     # not in brew
     # tomato one timer
