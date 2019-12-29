@@ -15,8 +15,6 @@
     ~/.spacemacs:
     ~/.gitconfig:
     ~/.gitignore_global:
-    #~.pythonrc:
     ~/.vim:
+    ~/.vscode:
     
-# - shell:
-#    - mac_setup.sh 

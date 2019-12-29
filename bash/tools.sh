@@ -1,5 +1,5 @@
 # brew
-if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
+if [[ "$(uname -s)" =~ "Linux" ]]; then
 then
   export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
   export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
@@ -18,6 +18,9 @@ fi
 ## autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+# vscode `code` bash command on mac
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
 # Languages
 ## Ruby - rbenv
 export RBENV_ROOT="$HOME/.rbenv"
@@ -34,5 +37,5 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 export NVM_DIR="$HOME/.nvm"
 source $(brew --prefix)/opt/nvm/nvm.sh
 
-### Client-specific
-/usr/local/opt/imagemagick@6/bin:$PATH
+## Go - gvm
+[[ -s "/Users/danderson/.gvm/scripts/gvm" ]] && source "/Users/danderson/.gvm/scripts/gvm"

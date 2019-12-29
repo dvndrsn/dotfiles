@@ -40,7 +40,7 @@ install_python() {
 install_node() {
     brew install nvm
 
-    # install and use latest node
+    # install and use most recent node version
     nvm install node
     nvm use node
     # package management
@@ -48,6 +48,13 @@ install_node() {
     npm install -g yarn
 }
 
+install_go() {
+  bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+  latest_gvm="$(gvm listall | grep -o 'go[0-9]\{1,\}\.[0-9]\{1,\}$' | sort --version-sort | tail -n1)"
+  gvm install "$latest_gvm" && gvm use "$latest_gvm"
+}
+
 install_ruby
 install_python
 install_node
+install_go
